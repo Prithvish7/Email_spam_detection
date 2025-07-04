@@ -120,18 +120,26 @@ if selected == "Home":
 elif selected == "About":
     st.header("📌 About the Project")
     st.write("""
-        MailGuard AI is an ML-powered web app to detect spam emails using a trained Naive Bayes classifier. 
-        It uses TF-IDF vectorization and visual feedback to make detection interactive and easy to understand.
-    """)
+**MailGuard AI** is a smart, machine learning-powered web app designed to detect spam emails with high accuracy.  
+It uses a trained **Naive Bayes classifier** along with **TF-IDF vectorization** to understand email content.
+
+With an easy-to-use interface and clean visuals, MailGuard AI makes spam detection fast, interactive, and effortless — whether you're pasting a message or uploading a file.
+
+🧠 Built with Machine Learning  
+📊 Powered by real-time predictions  
+🎯 Designed for simplicity and precision
+""")
+
 
 elif selected == "How it Works":
     st.header("⚙️ How It Works")
     st.markdown("""
-    - Paste or upload an email.
-    - The system transforms it with TF-IDF.
-    - It predicts if it's spam using a trained model.
-    - Word cloud and probability explanations are shown.
-    """)
+-  **Paste** your email content or 📄 **upload** a .txt file.
+-  Hit the **Predict** button to start the magic.
+-  Our AI scans the message instantly and tells you if it’s **SPAM** or **NOT SPAM**.
+-  Check your **prediction history** below anytime.
+""")
+
 
 elif selected == "Performance":
     st.subheader("📈 Model Performance Dashboard")
@@ -187,9 +195,10 @@ st.markdown(
     """
     <hr style="margin-top: 50px;">
     <p style='text-align: center; font-size: 14px; color: gray;'>
-    Made with ❤️ by <strong>Prithvish</strong>, <strong>Anirban</strong> & <strong>Sayantan</strong><br>
-    Powered by Streamlit & Machine Learning 🚀
-    </p>
+Developed by Team <strong>MailGuard AI</strong><br>
+ Last Updated: July 2025
+</p>
+
     """,
     unsafe_allow_html=True,
 )
