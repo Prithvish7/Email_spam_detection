@@ -1,7 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import pickle
-import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 import seaborn as sns
 import numpy as np
