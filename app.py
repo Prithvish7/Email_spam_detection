@@ -74,17 +74,8 @@ if selected == "Home":
         email_input = uploaded_file.read().decode("utf-8")
         st.text_area("Uploaded Email Content:", value=email_input, height=200)
 
-    col1, col2 = st.columns([1,1])
-    with col1:
-        predict_clicked = st.button("🚀 Predict", use_container_width=True)
-    with col2:
-        reset_clicked = st.button("🔄 Reset", use_container_width=True)
-
-    if reset_clicked:
-        st.session_state.history = []
-        email_input = ""
-        st.experimental_rerun()
-
+    predict_clicked = st.button("🚀 Predict", use_container_width=True)
+    
     if predict_clicked:
         if not email_input.strip():
             st.warning("Please enter or upload some email text.")
