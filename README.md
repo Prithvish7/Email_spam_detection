@@ -28,6 +28,7 @@
     .Seaborn, Plotly (for visualization)
 
 📦 Installation
+
     1.Clone the repository:-
     
         git clone https://github.com/your-username/Email-Spam-Detection.git
