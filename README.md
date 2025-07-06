@@ -12,7 +12,7 @@
 
 
 🖼️ Interface Preview
-<img src="screenshots/demo.png" alt="App Screenshot" width="800"/>
+<img src="https://github.com/anirbanmahato616/Email_spam_detection/issues/1" alt="App Screenshot" width="800"/>
 
 🧠 How It Works
     1.Input email via text box or .txt file.
@@ -29,7 +29,9 @@
 
 📦 Installation
     1.Clone the repository:-
+    
         git clone https://github.com/your-username/Email-Spam-Detection.git
+        
         cd Email-Spam-Detection
 
     2.Install dependencies:-
