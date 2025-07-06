@@ -1,11 +1,6 @@
 import streamlit as st
-import streamlit.components.v1 as components
 import pickle
 import plotly.graph_objects as go
-import seaborn as sns
-import numpy as np
-from wordcloud import WordCloud
-from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 from streamlit_option_menu import option_menu
 
 # Load model and vectorizer
@@ -87,18 +82,12 @@ if selected == "Home":
             st.session_state.history.append({
                 "email": email_input[:100] + ("..." if len(email_input) > 100 else ""),
                 "prediction": "SPAM" if prediction == 1 else "NOT SPAM"
-                #"confidence": f"{prediction_proba*100:.2f}%"
             })
 
             if prediction == 1:
                 st.error(f"🚫 SPAM MAIL!")
             else:
                 st.success(f"📩 NOT SPAM.")
-
-            #st.markdown("### 🧠 Word Cloud from Input")
-            #clean_text = " ".join([word for word in email_input.lower().split() if word not in ENGLISH_STOP_WORDS])
-            #wc = WordCloud(width=800, height=300, background_color='white').generate(clean_text)
-            #st.image(wc.to_array(), use_column_width=True)
 
     if st.session_state.history:
         st.markdown("---")
